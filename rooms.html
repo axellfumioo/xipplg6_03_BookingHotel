@@ -11,73 +11,123 @@
 <body>
   <header class="navbar">
     <div class="container">
-      <h1 class="logo">Hotel Sejarah</h1>
+      <a href="index.html" class="logo">Hotel Sejarah</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#experience">Pengalaman</a></li>
+          <li><a href="index.html#gallery">Galeri</a></li>
+          <li><a href="booking.html">Reservasi</a></li>
+          <li><a href="booking.html" class="btn btn-primary">Pesan Sekarang</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main class="rooms-section">
+  <section class="hero hero-rooms">
     <div class="container">
-      <h2 class="section-title">Pilih Tipe Kamar</h2>
-
-      <div class="room-grid">
-        <!-- Room Item -->
-        <div class="room-card">
-          <img
-            src="https://asset.kompas.com/crops/J5T8gwvbOggqYj9A2XYlI3LoKfE=/22x0:733x473/1200x800/data/photo/2022/06/11/62a450487247f.jpg"
-            alt="Standard Room">
-          <h3>Standard Room</h3>
-          <p class="price">Rp450.000 / malam</p>
-          <ul class="features">
-            <li>1 Bed Queen</li>
-            <li>AC & Wi-Fi</li>
-            <li>Kamar Mandi Dalam</li>
-          </ul>
-          <a href="booking.html?kamar=Standard%20Room" class="btn pesan">Pesan Sekarang</a>
-        </div>
-
-        <div class="room-card">
-          <img src="https://padmahotelbandung.com/images/rooms/deluxe-room-thumb.jpg" alt="Deluxe Room">
-          <h3>Deluxe Room</h3>
-          <p class="price">Rp650.000 / malam</p>
-          <ul class="features">
-            <li>1 Bed King</li>
-            <li>Mini Bar & TV</li>
-            <li>City View</li>
-          </ul>
-          <a href="booking.html?kamar=Deluxe%20Room" class="btn pesan">Pesan Sekarang</a>
-        </div>
-
-        <div class="room-card">
-          <img src="https://storage.kempinski.com/cdn-cgi/image/w=1920,f=auto,g=auto,fit=scale-down/ki-cms-prod/images/6/7/8/2/18732876-2-eng-GB/b85d45c78c16-84125917_4K.jpg" alt="Executive Room">
-          <h3>Executive Room</h3>
-          <p class="price">Rp900.000 / malam</p>
-          <ul class="features">
-            <li>1 Bed King + Sofa</li>
-            <li>Workspace</li>
-            <li>Free Breakfast</li>
-          </ul>
-          <a href="booking.html?kamar=Executive%20Room" class="btn pesan">Pesan Sekarang</a>
-        </div>
-
-        <div class="room-card">
-          <img
-            src="https://image-tc.galaxy.tf/wijpeg-2ofe2wg1akyihp1lytvujz7ud/presidential-suite-bedroom_wide.jpg?crop=0%2C100%2C1920%2C1080"
-            alt="Presidential Suite">
-          <h3>Presidential Suite</h3>
-          <p class="price">Rp2.500.000 / malam</p>
-          <ul class="features">
-            <li>2 Bed King</li>
-            <li>Private Lounge</li>
-            <li>Jacuzzi & Luxury Bathroom</li>
-          </ul>
-          <a href="booking.html?kamar=Presidential%20Suite" class="btn pesan">Pesan Sekarang</a>
-        </div>
+      <span class="badge">Koleksi Kamar</span>
+      <h1 class="hero-title">Suite elegan dengan pesona sejarah yang dirawat rapi.</h1>
+      <p class="hero-subtitle">Pilih kamar sesuai gaya perjalanan Anda, mulai dari standard heritage hingga presidential suite dengan layanan personal.</p>
+      <div class="hero-cta">
+        <a href="booking.html" class="btn btn-primary">Buat Reservasi</a>
+        <a href="#catalog" class="btn btn-outline">Lihat Semua Kamar</a>
       </div>
     </div>
+  </section>
+
+  <main>
+    <section class="rooms-section" id="catalog">
+      <div class="container">
+        <h2 class="section-title">Pilih Tipe Kamar</h2>
+        <p class="section-description">Semua kamar dilengkapi kasur custom, smart lighting, diffuser aromaterapi, serta akses WhatsApp butler 24 jam.</p>
+
+        <div class="room-grid">
+          <div class="room-card">
+            <img src="https://asset.kompas.com/crops/J5T8gwvbOggqYj9A2XYlI3LoKfE=/22x0:733x473/1200x800/data/photo/2022/06/11/62a450487247f.jpg" alt="Standard Room">
+            <h3>Standard Heritage</h3>
+            <p class="price">Rp450.000 / malam</p>
+            <ul class="features">
+              <li>Queen bed dengan linen 400 thread count</li>
+              <li>Rain shower & amenities organik</li>
+              <li>Streaming TV & Wi-Fi 200 Mbps</li>
+              <li>Signature welcome drink di lobi</li>
+            </ul>
+            <a href="booking.html?kamar=Standard%20Room" class="btn btn-primary">Pesan Standard</a>
+          </div>
+
+          <div class="room-card">
+            <img src="https://padmahotelbandung.com/images/rooms/deluxe-room-thumb.jpg" alt="Deluxe Room">
+            <h3>Deluxe Colonial</h3>
+            <p class="price">Rp650.000 / malam</p>
+            <ul class="features">
+              <li>King bed & balkon menghadap taman</li>
+              <li>Bathtub marmer dengan bath salt</li>
+              <li>Mesin kopi kapsul & curated minibar</li>
+              <li>Tur heritage malam hari gratis</li>
+            </ul>
+            <a href="booking.html?kamar=Deluxe%20Room" class="btn btn-primary">Pesan Deluxe</a>
+          </div>
+
+          <div class="room-card">
+            <img src="https://storage.kempinski.com/cdn-cgi/image/w=1920,f=auto,g=auto,fit=scale-down/ki-cms-prod/images/6/7/8/2/18732876-2-eng-GB/b85d45c78c16-84125917_4K.jpg" alt="Executive Room">
+            <h3>Executive Governor</h3>
+            <p class="price">Rp900.000 / malam</p>
+            <ul class="features">
+              <li>Living room terpisah & smart assistant</li>
+              <li>Akses executive lounge & afternoon tea</li>
+              <li>Butler pribadi & pressing pakaian harian</li>
+              <li>Voucher spa aromaterapi 30 menit</li>
+            </ul>
+            <a href="booking.html?kamar=Executive%20Room" class="btn btn-primary">Pesan Executive</a>
+          </div>
+
+          <div class="room-card">
+            <img src="https://image-tc.galaxy.tf/wijpeg-2ofe2wg1akyihp1lytvujz7ud/presidential-suite-bedroom_wide.jpg?crop=0%2C100%2C1920%2C1080" alt="Presidential Suite">
+            <h3>Presidential Suite</h3>
+            <p class="price">Rp2.500.000 / malam</p>
+            <ul class="features">
+              <li>Dua kamar tidur king & ruang makan privat</li>
+              <li>Jacuzzi onsen & sauna pribadi</li>
+              <li>Chef on call untuk in-room dining</li>
+              <li>Airport transfer & akses lounge VIP</li>
+            </ul>
+            <a href="booking.html?kamar=Presidential%20Suite" class="btn btn-primary">Pesan Suite</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="highlight-grid">
+          <div class="highlight-card">
+            <span>Paket Romance</span>
+            <p>Dekorasi bunga, private dinner di balkon heritage, dan sessi foto profesional untuk merayakan momen romantis.</p>
+          </div>
+          <div class="highlight-card">
+            <span>Business Ready</span>
+            <p>Upgrade ruang kerja, printer portable, serta coffee break premium untuk produktivitas tanpa kompromi.</p>
+          </div>
+          <div class="highlight-card">
+            <span>Family Fun</span>
+            <p>Kamar connecting, kids club, serta tur kuliner Bandung dengan pemandu lokal tersertifikasi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; 2025 Hotel Sejarah. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Hotel Sejarah. Semua hak cipta dilindungi.</p>
+      <div class="footer-nav">
+        <a href="index.html#experience">Tentang</a>
+        <a href="index.html#gallery">Galeri</a>
+        <a href="booking.html">Reservasi</a>
+        <a href="mailto:reservasi@hotelsejarah.id">reservasi@hotelsejarah.id</a>
+      </div>
+      <p>Jl. Braga No. 45, Bandung · (022) 555-0123</p>
+    </div>
   </footer>
 </body>
 

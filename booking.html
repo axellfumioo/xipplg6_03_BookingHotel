@@ -11,59 +11,87 @@
 <body>
     <header class="navbar">
         <div class="container">
-            <h1 class="logo">Hotel Sejarah</h1>
+            <a href="index.html" class="logo">Hotel Sejarah</a>
             <nav>
-                <a href="index.html" class="btn beranda">Beranda</a>
+                <ul class="nav-links">
+                    <li><a href="index.html#experience">Pengalaman</a></li>
+                    <li><a href="rooms.html">Kamar</a></li>
+                    <li><a href="index.html#testimoni">Testimoni</a></li>
+                    <li><a href="booking.html" class="btn btn-primary">Pesan Sekarang</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
     <main class="form-section">
         <div class="container">
-            <h2 class="section-title">Formulir Pemesanan</h2>
-            <form id="bookingForm">
-                <div class="form-group">
-                    <label for="room">Tipe Kamar</label>
-                    <input type="text" id="room" name="room" readonly>
-                </div>
+            <h2 class="section-title">Reservasi Personal Hotel Sejarah</h2>
+            <p class="section-description">Isi detail tamu agar kami dapat menyiapkan kamar, amenities, dan layanan khusus sebelum kedatangan Anda.</p>
 
-                <div class="form-group">
-                    <label for="name">Nama Lengkap</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            <div class="booking-layout">
+                <aside class="booking-intro">
+                    <h3>Kenapa reservasi langsung?</h3>
+                    <ul>
+                        <li>Upgrade kamar gratis (sesuai ketersediaan)</li>
+                        <li>Butler siap menyambut melalui WhatsApp</li>
+                        <li>Prioritas early check-in & late check-out</li>
+                        <li>Voucher minuman welcome di Lounge Jazz</li>
+                    </ul>
+                    <p>Untuk bantuan cepat, hubungi concierge kami di <a href="tel:+62225550123">(022) 555-0123</a>.</p>
+                </aside>
 
-                <div class="form-group">
-                    <label for="phone">Nomor HP</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="room">Tipe Kamar</label>
+                        <input type="text" id="room" name="room" readonly>
+                    </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                </div>
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="address">Alamat</label>
-                    <textarea id="address" name="address" rows="3"></textarea>
-                </div>
+                    <div class="form-group">
+                        <label for="phone">Nomor HP</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="checkin">Tanggal Check-in</label>
-                    <input type="date" id="checkin" name="checkin" required>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
 
-                <div class="form-group">
-                    <label for="checkout">Tanggal Check-out</label>
-                    <input type="date" id="checkout" name="checkout" required>
-                </div>
+                    <div class="form-group">
+                        <label for="address">Alamat</label>
+                        <textarea id="address" name="address" rows="3"></textarea>
+                    </div>
 
-                <button type="submit" class="btn btn-primary">Kirim & Pesan via WhatsApp</button>
-            </form>
+                    <div class="form-group">
+                        <label for="checkin">Tanggal Check-in</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkout">Tanggal Check-out</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Kirim & Pesan via WhatsApp</button>
+                </form>
+            </div>
         </div>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Hotel Sejarah. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Hotel Sejarah. Semua hak cipta dilindungi.</p>
+            <div class="footer-nav">
+                <a href="index.html#experience">Tentang</a>
+                <a href="rooms.html">Kamar</a>
+                <a href="mailto:reservasi@hotelsejarah.id">reservasi@hotelsejarah.id</a>
+            </div>
+            <p>Jl. Braga No. 45, Bandung · (022) 555-0123</p>
+        </div>
     </footer>
 
     <script>
